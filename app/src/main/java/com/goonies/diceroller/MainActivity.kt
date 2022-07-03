@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun rollDice() {
         val randomInt = Random().nextInt(6) + 1
-        val dice_image: ImageView = findViewById(R.id.roll_image)
+        val diceImage: ImageView = findViewById(R.id.roll_image)
         val diceNumber = when (randomInt) {
             1 -> R.drawable.dice_1
             2 -> R.drawable.dice_2
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Asignando una imágen a nuestra ImageView
-        dice_image.setImageResource(diceNumber)
+        diceImage.setImageResource(diceNumber)
 
     }
 }
